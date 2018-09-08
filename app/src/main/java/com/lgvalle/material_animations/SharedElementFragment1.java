@@ -61,7 +61,7 @@ public class SharedElementFragment1 extends Fragment {
 
         ChangeBounds changeBoundsTransition = new ChangeBounds();
         changeBoundsTransition.setDuration(getResources().getInteger(R.integer.anim_duration_medium));
-
+        // overlap false, espera q la animaciiOn termine para continuar con la sgt.. else inicia en paralelo..
         sharedElementFragment2.setEnterTransition(slideTransition);
         sharedElementFragment2.setAllowEnterTransitionOverlap(overlap);
         sharedElementFragment2.setAllowReturnTransitionOverlap(overlap);

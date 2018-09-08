@@ -26,8 +26,8 @@
             android:theme="@style/MaterialAnimations.Red" />
         <activity
             android:name=".SharedElementActivity"
-            android:theme="@style/MaterialAnimations.Blue" />
-
+            android:theme="@style/MaterialAnimations.Blue" >
+        </activity>
         <activity
             android:name=".AnimationsActivity1"
             android:theme="@style/MaterialAnimations.Green" />

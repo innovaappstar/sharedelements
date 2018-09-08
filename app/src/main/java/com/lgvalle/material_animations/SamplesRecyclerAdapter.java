@@ -66,7 +66,7 @@ public class SamplesRecyclerAdapter extends RecyclerView.Adapter<SamplesRecycler
         startActivity(target, pairs, sample);
     }
 
-    private void transitionToActivity(Class target, SamplesViewHolder viewHolder, Sample sample) {
+    public void transitionToActivity(Class target, SamplesViewHolder viewHolder, Sample sample) {
         final Pair<View, String>[] pairs = TransitionHelper.createSafeTransitionParticipants(activity, false,
                 new Pair<>(viewHolder.binding.sampleIcon, activity.getString(R.string.square_blue_name)),
                 new Pair<>(viewHolder.binding.sampleName, activity.getString(R.string.sample_blue_title)));

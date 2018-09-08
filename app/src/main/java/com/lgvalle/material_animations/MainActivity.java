@@ -23,6 +23,9 @@ public class MainActivity extends AppCompatActivity {
         setupSamples();
         setupToolbar();
         setupLayout();
+
+        // lanzamiento por default de actividad con elementos compartidos...
+
     }
 
     private void setupWindowAnimations() {
@@ -55,5 +58,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         SamplesRecyclerAdapter samplesRecyclerAdapter = new SamplesRecyclerAdapter(this, samples);
         recyclerView.setAdapter(samplesRecyclerAdapter);
+//        samplesRecyclerAdapter.transitionToActivity(SharedElementActivity.class, viewHolder, sample);
+
     }
 }
